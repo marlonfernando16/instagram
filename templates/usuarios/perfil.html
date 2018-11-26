@@ -1,0 +1,12 @@
+{% extends 'base.html'  %}
+{% block conteudo %}
+
+     <h1>Perfil</h1>
+
+    <p> {{ perfil.usuario.username }} </p>
+    
+    <img src="{{ perfil.foto.url }}" class="rounded-circle">
+
+    <p> {{ perfil.bio }} </p>
+
+{% endblock %}
